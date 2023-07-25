@@ -32,10 +32,10 @@ int _printf(const char *format, ...)
 				else if (*format == 'i' || *format == 'd')
 					n_print += print_int(va_arg(my_arg, int));
 				else
-				}
+				{
 					n_print = print_other(*format);
 					if (n_print == -1)
-						return (n_print)
+						return (n_print);
 				}
 			}
 			format++;
